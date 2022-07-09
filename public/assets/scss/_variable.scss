@@ -1,0 +1,47 @@
+$color-primary:#fff;
+$text-primary:#666666;
+$icons-color:#37da11;
+$heading-color:#1f1f1f;
+
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Yellowtail&display=swap);
+
+@mixin main-wrapper {
+    display:inline-block;
+    width:100%;
+    margin:1.25rem 0;
+    position: relative;
+}
+
+@mixin heading {
+    display:inline-block;
+    width:100%;
+    position: relative;
+    margin:1.25rem 0;
+    text-align:center;
+
+    h5{
+        display:block;
+        margin:.3125rem 0;
+        color:$icons-color;
+        font-size:1.125rem;
+    }
+
+    h2{
+        display:inline-block;
+        margin:.3125rem 0;
+        font-size:1.5625rem;
+        text-transform:uppercase;
+        font-weight:700;
+        letter-spacing:.5px;
+        color:$heading-color;
+    }
+
+    p{
+        display:block;
+        margin:.3125rem 0;
+        font-size:1rem;
+        color:$text-primary;
+
+    }
+}
